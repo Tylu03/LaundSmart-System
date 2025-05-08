@@ -1,0 +1,1475 @@
+@startuml
+
+title __PUBLICLAUNDSMARTSYSTEM's Class Diagram__\n
+
+  namespace com.c1se22.publiclaundsmartsystem {
+    class com.c1se22.publiclaundsmartsystem.PublicLaundSmartSystemApplication {
+    }
+  }
+  
+
+  namespace com.c1se22.publiclaundsmartsystem {
+    namespace annotation {
+      interface com.c1se22.publiclaundsmartsystem.annotation.Email {
+      }
+    }
+  }
+  
+
+  namespace com.c1se22.publiclaundsmartsystem {
+    namespace annotation {
+      class com.c1se22.publiclaundsmartsystem.annotation.EmailConstraintsValidator {
+      }
+    }
+  }
+  
+
+  namespace com.c1se22.publiclaundsmartsystem {
+    namespace annotation {
+      interface com.c1se22.publiclaundsmartsystem.annotation.Loggable {
+      }
+    }
+  }
+  
+
+  namespace com.c1se22.publiclaundsmartsystem {
+    namespace annotation {
+      interface com.c1se22.publiclaundsmartsystem.annotation.Password {
+      }
+    }
+  }
+  
+
+  namespace com.c1se22.publiclaundsmartsystem {
+    namespace annotation {
+      class com.c1se22.publiclaundsmartsystem.annotation.PasswordConstraintsValidator {
+      }
+    }
+  }
+  
+
+  namespace com.c1se22.publiclaundsmartsystem {
+    namespace aspect {
+      class com.c1se22.publiclaundsmartsystem.aspect.LoggingAspect {
+      }
+    }
+  }
+  
+
+  namespace com.c1se22.publiclaundsmartsystem {
+    namespace configuration {
+      class com.c1se22.publiclaundsmartsystem.configuration.FirebaseConfig {
+      }
+    }
+  }
+  
+
+  namespace com.c1se22.publiclaundsmartsystem {
+    namespace configuration {
+      class com.c1se22.publiclaundsmartsystem.configuration.LoggingConfig {
+      }
+    }
+  }
+  
+
+  namespace com.c1se22.publiclaundsmartsystem {
+    namespace configuration {
+      class com.c1se22.publiclaundsmartsystem.configuration.SchedulingConfig {
+      }
+    }
+  }
+  
+
+  namespace com.c1se22.publiclaundsmartsystem {
+    namespace configuration {
+      class com.c1se22.publiclaundsmartsystem.configuration.SecurityConfig {
+      }
+    }
+  }
+  
+
+  namespace com.c1se22.publiclaundsmartsystem {
+    namespace configuration {
+      class com.c1se22.publiclaundsmartsystem.configuration.WebConfig {
+      }
+    }
+  }
+  
+
+  namespace com.c1se22.publiclaundsmartsystem {
+    namespace controller {
+      class com.c1se22.publiclaundsmartsystem.controller.AuthController {
+      }
+    }
+  }
+  
+
+  namespace com.c1se22.publiclaundsmartsystem {
+    namespace controller {
+      class com.c1se22.publiclaundsmartsystem.controller.LocationController {
+      }
+    }
+  }
+  
+
+  namespace com.c1se22.publiclaundsmartsystem {
+    namespace controller {
+      class com.c1se22.publiclaundsmartsystem.controller.MachineController {
+      }
+    }
+  }
+  
+
+  namespace com.c1se22.publiclaundsmartsystem {
+    namespace controller {
+      class com.c1se22.publiclaundsmartsystem.controller.NotificationController {
+      }
+    }
+  }
+  
+
+  namespace com.c1se22.publiclaundsmartsystem {
+    namespace controller {
+      class com.c1se22.publiclaundsmartsystem.controller.OwnerController {
+      }
+    }
+  }
+  
+
+  namespace com.c1se22.publiclaundsmartsystem {
+    namespace controller {
+      class com.c1se22.publiclaundsmartsystem.controller.PasswordResetController {
+      }
+    }
+  }
+  
+
+  namespace com.c1se22.publiclaundsmartsystem {
+    namespace controller {
+      class com.c1se22.publiclaundsmartsystem.controller.PaymentController {
+      }
+    }
+  }
+  
+
+  namespace com.c1se22.publiclaundsmartsystem {
+    namespace controller {
+      class com.c1se22.publiclaundsmartsystem.controller.ReservationController {
+      }
+    }
+  }
+  
+
+  namespace com.c1se22.publiclaundsmartsystem {
+    namespace controller {
+      class com.c1se22.publiclaundsmartsystem.controller.TestController {
+      }
+    }
+  }
+  
+
+  namespace com.c1se22.publiclaundsmartsystem {
+    namespace controller {
+      class com.c1se22.publiclaundsmartsystem.controller.TransactionController {
+      }
+    }
+  }
+  
+
+  namespace com.c1se22.publiclaundsmartsystem {
+    namespace controller {
+      class com.c1se22.publiclaundsmartsystem.controller.UsageHistoryController {
+      }
+    }
+  }
+  
+
+  namespace com.c1se22.publiclaundsmartsystem {
+    namespace controller {
+      class com.c1se22.publiclaundsmartsystem.controller.UserController {
+      }
+    }
+  }
+  
+
+  namespace com.c1se22.publiclaundsmartsystem {
+    namespace controller {
+      class com.c1se22.publiclaundsmartsystem.controller.UserDeviceController {
+      }
+    }
+  }
+  
+
+  namespace com.c1se22.publiclaundsmartsystem {
+    namespace controller {
+      class com.c1se22.publiclaundsmartsystem.controller.WashingTypeController {
+      }
+    }
+  }
+  
+
+  namespace com.c1se22.publiclaundsmartsystem {
+    namespace entity {
+      class com.c1se22.publiclaundsmartsystem.entity.Feedback {
+      }
+    }
+  }
+  
+
+  namespace com.c1se22.publiclaundsmartsystem {
+    namespace entity {
+      class com.c1se22.publiclaundsmartsystem.entity.Location {
+      }
+    }
+  }
+  
+
+  namespace com.c1se22.publiclaundsmartsystem {
+    namespace entity {
+      class com.c1se22.publiclaundsmartsystem.entity.Machine {
+      }
+    }
+  }
+  
+
+  namespace com.c1se22.publiclaundsmartsystem {
+    namespace entity {
+      class com.c1se22.publiclaundsmartsystem.entity.MaintenanceLog {
+      }
+    }
+  }
+  
+
+  namespace com.c1se22.publiclaundsmartsystem {
+    namespace entity {
+      class com.c1se22.publiclaundsmartsystem.entity.Notification {
+      }
+    }
+  }
+  
+
+  namespace com.c1se22.publiclaundsmartsystem {
+    namespace entity {
+      class com.c1se22.publiclaundsmartsystem.entity.OTP {
+      }
+    }
+  }
+  
+
+  namespace com.c1se22.publiclaundsmartsystem {
+    namespace entity {
+      class com.c1se22.publiclaundsmartsystem.entity.OwnerWithdrawInfo {
+      }
+    }
+  }
+  
+
+  namespace com.c1se22.publiclaundsmartsystem {
+    namespace entity {
+      class com.c1se22.publiclaundsmartsystem.entity.PasswordResetToken {
+      }
+    }
+  }
+  
+
+  namespace com.c1se22.publiclaundsmartsystem {
+    namespace entity {
+      class com.c1se22.publiclaundsmartsystem.entity.Reservation {
+      }
+    }
+  }
+  
+
+  namespace com.c1se22.publiclaundsmartsystem {
+    namespace entity {
+      class com.c1se22.publiclaundsmartsystem.entity.Role {
+      }
+    }
+  }
+  
+
+  namespace com.c1se22.publiclaundsmartsystem {
+    namespace entity {
+      class com.c1se22.publiclaundsmartsystem.entity.Transaction {
+      }
+    }
+  }
+  
+
+  namespace com.c1se22.publiclaundsmartsystem {
+    namespace entity {
+      class com.c1se22.publiclaundsmartsystem.entity.UsageHistory {
+      }
+    }
+  }
+  
+
+  namespace com.c1se22.publiclaundsmartsystem {
+    namespace entity {
+      class com.c1se22.publiclaundsmartsystem.entity.User {
+      }
+    }
+  }
+  
+
+  namespace com.c1se22.publiclaundsmartsystem {
+    namespace entity {
+      class com.c1se22.publiclaundsmartsystem.entity.UserBanHistory {
+      }
+    }
+  }
+  
+
+  namespace com.c1se22.publiclaundsmartsystem {
+    namespace entity {
+      class com.c1se22.publiclaundsmartsystem.entity.UserDevice {
+      }
+    }
+  }
+  
+
+  namespace com.c1se22.publiclaundsmartsystem {
+    namespace entity {
+      class com.c1se22.publiclaundsmartsystem.entity.WashingType {
+      }
+    }
+  }
+  
+
+  namespace com.c1se22.publiclaundsmartsystem {
+    namespace enums {
+      enum DeviceType {
+      }
+    }
+  }
+  
+
+  namespace com.c1se22.publiclaundsmartsystem {
+    namespace enums {
+      enum ErrorCode {
+      }
+    }
+  }
+  
+
+  namespace com.c1se22.publiclaundsmartsystem {
+    namespace enums {
+      enum MachineStatus {
+      }
+    }
+  }
+  
+
+  namespace com.c1se22.publiclaundsmartsystem {
+    namespace enums {
+      enum ReservationStatus {
+      }
+    }
+  }
+  
+
+  namespace com.c1se22.publiclaundsmartsystem {
+    namespace enums {
+      enum RoleEnum {
+      }
+    }
+  }
+  
+
+  namespace com.c1se22.publiclaundsmartsystem {
+    namespace enums {
+      enum TransactionStatus {
+      }
+    }
+  }
+  
+
+  namespace com.c1se22.publiclaundsmartsystem {
+    namespace enums {
+      enum TransactionType {
+      }
+    }
+  }
+  
+
+  namespace com.c1se22.publiclaundsmartsystem {
+    namespace enums {
+      enum UsageHistoryStatus {
+      }
+    }
+  }
+  
+
+  namespace com.c1se22.publiclaundsmartsystem {
+    namespace event {
+      interface com.c1se22.publiclaundsmartsystem.event.AppEvent {
+      }
+    }
+  }
+  
+
+  namespace com.c1se22.publiclaundsmartsystem {
+    namespace event {
+      class com.c1se22.publiclaundsmartsystem.event.ReservationCreatedEvent {
+      }
+    }
+  }
+  
+
+  namespace com.c1se22.publiclaundsmartsystem {
+    namespace event {
+      class com.c1se22.publiclaundsmartsystem.event.WashingCompleteEvent {
+      }
+    }
+  }
+  
+
+  namespace com.c1se22.publiclaundsmartsystem {
+    namespace event {
+      class com.c1se22.publiclaundsmartsystem.event.WashingNearCompleteEvent {
+      }
+    }
+  }
+  
+
+  namespace com.c1se22.publiclaundsmartsystem {
+    namespace event {
+      namespace handler {
+        class com.c1se22.publiclaundsmartsystem.event.handler.ReservationEventHandler {
+        }
+      }
+    }
+  }
+  
+
+  namespace com.c1se22.publiclaundsmartsystem {
+    namespace event {
+      namespace handler {
+        class com.c1se22.publiclaundsmartsystem.event.handler.WashingCompleteEventHandler {
+        }
+      }
+    }
+  }
+  
+
+  namespace com.c1se22.publiclaundsmartsystem {
+    namespace event {
+      namespace handler {
+        class com.c1se22.publiclaundsmartsystem.event.handler.WashingNearCompleteEventHandler {
+        }
+      }
+    }
+  }
+  
+
+  namespace com.c1se22.publiclaundsmartsystem {
+    namespace exception {
+      class com.c1se22.publiclaundsmartsystem.exception.APIException {
+      }
+    }
+  }
+  
+
+  namespace com.c1se22.publiclaundsmartsystem {
+    namespace exception {
+      abstract class com.c1se22.publiclaundsmartsystem.exception.BusinessException {
+      }
+    }
+  }
+  
+
+  namespace com.c1se22.publiclaundsmartsystem {
+    namespace exception {
+      class com.c1se22.publiclaundsmartsystem.exception.GlobalExceptionHandler {
+      }
+    }
+  }
+  
+
+  namespace com.c1se22.publiclaundsmartsystem {
+    namespace exception {
+      class com.c1se22.publiclaundsmartsystem.exception.InsufficientBalanceException {
+      }
+    }
+  }
+  
+
+  namespace com.c1se22.publiclaundsmartsystem {
+    namespace exception {
+      class com.c1se22.publiclaundsmartsystem.exception.PaymentProcessingException {
+      }
+    }
+  }
+  
+
+  namespace com.c1se22.publiclaundsmartsystem {
+    namespace exception {
+      class com.c1se22.publiclaundsmartsystem.exception.ResourceNotFoundException {
+      }
+    }
+  }
+  
+
+  namespace com.c1se22.publiclaundsmartsystem {
+    namespace payload {
+      class com.c1se22.publiclaundsmartsystem.payload.MachineInUseDto {
+      }
+    }
+  }
+  
+
+  namespace com.c1se22.publiclaundsmartsystem {
+    namespace payload {
+      class com.c1se22.publiclaundsmartsystem.payload.UsageReportDto {
+      }
+    }
+  }
+  
+
+  namespace com.c1se22.publiclaundsmartsystem {
+    namespace payload {
+      namespace internal {
+        class com.c1se22.publiclaundsmartsystem.payload.internal.FirebaseMachine {
+        }
+      }
+    }
+  }
+  
+
+  namespace com.c1se22.publiclaundsmartsystem {
+    namespace payload {
+      namespace internal {
+        class com.c1se22.publiclaundsmartsystem.payload.internal.PayosTransactionDto {
+        }
+      }
+    }
+  }
+  
+
+  namespace com.c1se22.publiclaundsmartsystem {
+    namespace payload {
+      namespace internal {
+        class com.c1se22.publiclaundsmartsystem.payload.internal.PushNotificationRequestDto {
+        }
+      }
+    }
+  }
+  
+
+  namespace com.c1se22.publiclaundsmartsystem {
+    namespace payload {
+      namespace internal {
+        class com.c1se22.publiclaundsmartsystem.payload.internal.PushNotificationResponseDto {
+        }
+      }
+    }
+  }
+  
+
+  namespace com.c1se22.publiclaundsmartsystem {
+    namespace payload {
+      namespace internal {
+        class com.c1se22.publiclaundsmartsystem.payload.internal.ReservationDto {
+        }
+      }
+    }
+  }
+  
+
+  namespace com.c1se22.publiclaundsmartsystem {
+    namespace payload {
+      namespace request {
+        class com.c1se22.publiclaundsmartsystem.payload.request.CreatePaymentLinkRequestBody {
+        }
+      }
+    }
+  }
+  
+
+  namespace com.c1se22.publiclaundsmartsystem {
+    namespace payload {
+      namespace request {
+        class com.c1se22.publiclaundsmartsystem.payload.request.EmailRequestDto {
+        }
+      }
+    }
+  }
+  
+
+  namespace com.c1se22.publiclaundsmartsystem {
+    namespace payload {
+      namespace request {
+        class com.c1se22.publiclaundsmartsystem.payload.request.LocationSummaryDto {
+        }
+      }
+    }
+  }
+  
+
+  namespace com.c1se22.publiclaundsmartsystem {
+    namespace payload {
+      namespace request {
+        class com.c1se22.publiclaundsmartsystem.payload.request.LoginDto {
+        }
+      }
+    }
+  }
+  
+
+  namespace com.c1se22.publiclaundsmartsystem {
+    namespace payload {
+      namespace request {
+        class com.c1se22.publiclaundsmartsystem.payload.request.MachineCreateDto {
+        }
+      }
+    }
+  }
+  
+
+  namespace com.c1se22.publiclaundsmartsystem {
+    namespace payload {
+      namespace request {
+        class com.c1se22.publiclaundsmartsystem.payload.request.MachineDto {
+        }
+      }
+    }
+  }
+  
+
+  namespace com.c1se22.publiclaundsmartsystem {
+    namespace payload {
+      namespace request {
+        class com.c1se22.publiclaundsmartsystem.payload.request.OwnerWithdrawInfoRequestDto {
+        }
+      }
+    }
+  }
+  
+
+  namespace com.c1se22.publiclaundsmartsystem {
+    namespace payload {
+      namespace request {
+        class com.c1se22.publiclaundsmartsystem.payload.request.RegisterDto {
+        }
+      }
+    }
+  }
+  
+
+  namespace com.c1se22.publiclaundsmartsystem {
+    namespace payload {
+      namespace request {
+        class com.c1se22.publiclaundsmartsystem.payload.request.ReservationCreateDto {
+        }
+      }
+    }
+  }
+  
+
+  namespace com.c1se22.publiclaundsmartsystem {
+    namespace payload {
+      namespace request {
+        class com.c1se22.publiclaundsmartsystem.payload.request.ResetPasswordRequestDto {
+        }
+      }
+    }
+  }
+  
+
+  namespace com.c1se22.publiclaundsmartsystem {
+    namespace payload {
+      namespace request {
+        class com.c1se22.publiclaundsmartsystem.payload.request.UserDeviceRegisterDto {
+        }
+      }
+    }
+  }
+  
+
+  namespace com.c1se22.publiclaundsmartsystem {
+    namespace payload {
+      namespace request {
+        class com.c1se22.publiclaundsmartsystem.payload.request.VerifyOTPRequestDto {
+        }
+      }
+    }
+  }
+  
+
+  namespace com.c1se22.publiclaundsmartsystem {
+    namespace payload {
+      namespace response {
+        class com.c1se22.publiclaundsmartsystem.payload.response.CheckoutResponseDto {
+        }
+      }
+    }
+  }
+  
+
+  namespace com.c1se22.publiclaundsmartsystem {
+    namespace payload {
+      namespace response {
+        class com.c1se22.publiclaundsmartsystem.payload.response.ErrorDetails {
+        }
+      }
+    }
+  }
+  
+
+  namespace com.c1se22.publiclaundsmartsystem {
+    namespace payload {
+      namespace response {
+        class com.c1se22.publiclaundsmartsystem.payload.response.JwtResponse {
+        }
+      }
+    }
+  }
+  
+
+  namespace com.c1se22.publiclaundsmartsystem {
+    namespace payload {
+      namespace response {
+        class com.c1se22.publiclaundsmartsystem.payload.response.LocationDetailsDto {
+        }
+      }
+    }
+  }
+  
+
+  namespace com.c1se22.publiclaundsmartsystem {
+    namespace payload {
+      namespace response {
+        class com.c1se22.publiclaundsmartsystem.payload.response.LoginResponse {
+        }
+      }
+    }
+  }
+  
+
+  namespace com.c1se22.publiclaundsmartsystem {
+    namespace payload {
+      namespace response {
+        class com.c1se22.publiclaundsmartsystem.payload.response.MachineAndTimeDto {
+        }
+      }
+    }
+  }
+  
+
+  namespace com.c1se22.publiclaundsmartsystem {
+    namespace payload {
+      namespace response {
+        class com.c1se22.publiclaundsmartsystem.payload.response.NotificationDto {
+        }
+      }
+    }
+  }
+  
+
+  namespace com.c1se22.publiclaundsmartsystem {
+    namespace payload {
+      namespace response {
+        class com.c1se22.publiclaundsmartsystem.payload.response.OTPResponseDto {
+        }
+      }
+    }
+  }
+  
+
+  namespace com.c1se22.publiclaundsmartsystem {
+    namespace payload {
+      namespace response {
+        class com.c1se22.publiclaundsmartsystem.payload.response.PaymentLinkDto {
+        }
+      }
+    }
+  }
+  
+
+  namespace com.c1se22.publiclaundsmartsystem {
+    namespace payload {
+      namespace response {
+        class com.c1se22.publiclaundsmartsystem.payload.response.ReservationResponseDto {
+        }
+      }
+    }
+  }
+  
+
+  namespace com.c1se22.publiclaundsmartsystem {
+    namespace payload {
+      namespace response {
+        class com.c1se22.publiclaundsmartsystem.payload.response.TransactionDto {
+        }
+      }
+    }
+  }
+  
+
+  namespace com.c1se22.publiclaundsmartsystem {
+    namespace payload {
+      namespace response {
+        class com.c1se22.publiclaundsmartsystem.payload.response.UsageHistoryDto {
+        }
+      }
+    }
+  }
+  
+
+  namespace com.c1se22.publiclaundsmartsystem {
+    namespace payload {
+      namespace response {
+        class com.c1se22.publiclaundsmartsystem.payload.response.UserBanStatusDto {
+        }
+      }
+    }
+  }
+  
+
+  namespace com.c1se22.publiclaundsmartsystem {
+    namespace payload {
+      namespace response {
+        class com.c1se22.publiclaundsmartsystem.payload.response.UserDeviceResponseDto {
+        }
+      }
+    }
+  }
+  
+
+  namespace com.c1se22.publiclaundsmartsystem {
+    namespace payload {
+      namespace response {
+        class com.c1se22.publiclaundsmartsystem.payload.response.UserDto {
+        }
+      }
+    }
+  }
+  
+
+  namespace com.c1se22.publiclaundsmartsystem {
+    namespace payload {
+      namespace response {
+        class com.c1se22.publiclaundsmartsystem.payload.response.UserUsageDto {
+        }
+      }
+    }
+  }
+  
+
+  namespace com.c1se22.publiclaundsmartsystem {
+    namespace payload {
+      namespace response {
+        class com.c1se22.publiclaundsmartsystem.payload.response.VerifyOTPResponseDto {
+        }
+      }
+    }
+  }
+  
+
+  namespace com.c1se22.publiclaundsmartsystem {
+    namespace repository {
+      interface com.c1se22.publiclaundsmartsystem.repository.LocationRepository {
+      }
+    }
+  }
+  
+
+  namespace com.c1se22.publiclaundsmartsystem {
+    namespace repository {
+      interface com.c1se22.publiclaundsmartsystem.repository.MachineRepository {
+      }
+    }
+  }
+  
+
+  namespace com.c1se22.publiclaundsmartsystem {
+    namespace repository {
+      interface com.c1se22.publiclaundsmartsystem.repository.NotificationRepository {
+      }
+    }
+  }
+  
+
+  namespace com.c1se22.publiclaundsmartsystem {
+    namespace repository {
+      interface com.c1se22.publiclaundsmartsystem.repository.OTPRepository {
+      }
+    }
+  }
+  
+
+  namespace com.c1se22.publiclaundsmartsystem {
+    namespace repository {
+      interface com.c1se22.publiclaundsmartsystem.repository.OwnerWithdrawInfoRepository {
+      }
+    }
+  }
+  
+
+  namespace com.c1se22.publiclaundsmartsystem {
+    namespace repository {
+      interface com.c1se22.publiclaundsmartsystem.repository.PasswordResetTokenRepository {
+      }
+    }
+  }
+  
+
+  namespace com.c1se22.publiclaundsmartsystem {
+    namespace repository {
+      interface com.c1se22.publiclaundsmartsystem.repository.ReservationRepository {
+      }
+    }
+  }
+  
+
+  namespace com.c1se22.publiclaundsmartsystem {
+    namespace repository {
+      interface com.c1se22.publiclaundsmartsystem.repository.RoleRepository {
+      }
+    }
+  }
+  
+
+  namespace com.c1se22.publiclaundsmartsystem {
+    namespace repository {
+      interface com.c1se22.publiclaundsmartsystem.repository.TransactionRepository {
+      }
+    }
+  }
+  
+
+  namespace com.c1se22.publiclaundsmartsystem {
+    namespace repository {
+      interface com.c1se22.publiclaundsmartsystem.repository.UsageHistoryRepository {
+      }
+    }
+  }
+  
+
+  namespace com.c1se22.publiclaundsmartsystem {
+    namespace repository {
+      interface com.c1se22.publiclaundsmartsystem.repository.UserBanHistoryRepository {
+      }
+    }
+  }
+  
+
+  namespace com.c1se22.publiclaundsmartsystem {
+    namespace repository {
+      interface com.c1se22.publiclaundsmartsystem.repository.UserDeviceRepository {
+      }
+    }
+  }
+  
+
+  namespace com.c1se22.publiclaundsmartsystem {
+    namespace repository {
+      interface com.c1se22.publiclaundsmartsystem.repository.UserRepository {
+      }
+    }
+  }
+  
+
+  namespace com.c1se22.publiclaundsmartsystem {
+    namespace repository {
+      interface com.c1se22.publiclaundsmartsystem.repository.WashingTypeRepository {
+      }
+    }
+  }
+  
+
+  namespace com.c1se22.publiclaundsmartsystem {
+    namespace security {
+      class com.c1se22.publiclaundsmartsystem.security.CustomeUserDetailsService {
+      }
+    }
+  }
+  
+
+  namespace com.c1se22.publiclaundsmartsystem {
+    namespace security {
+      class com.c1se22.publiclaundsmartsystem.security.JwtAuthenticationEntryPoint {
+      }
+    }
+  }
+  
+
+  namespace com.c1se22.publiclaundsmartsystem {
+    namespace security {
+      class com.c1se22.publiclaundsmartsystem.security.JwtAuthenticationFilter {
+      }
+    }
+  }
+  
+
+  namespace com.c1se22.publiclaundsmartsystem {
+    namespace security {
+      class com.c1se22.publiclaundsmartsystem.security.JwtProvider {
+      }
+    }
+  }
+  
+
+  namespace com.c1se22.publiclaundsmartsystem {
+    namespace service {
+      interface com.c1se22.publiclaundsmartsystem.service.AuthService {
+      }
+    }
+  }
+  
+
+  namespace com.c1se22.publiclaundsmartsystem {
+    namespace service {
+      interface com.c1se22.publiclaundsmartsystem.service.EventService {
+      }
+    }
+  }
+  
+
+  namespace com.c1se22.publiclaundsmartsystem {
+    namespace service {
+      interface com.c1se22.publiclaundsmartsystem.service.FCMService {
+      }
+    }
+  }
+  
+
+  namespace com.c1se22.publiclaundsmartsystem {
+    namespace service {
+      interface com.c1se22.publiclaundsmartsystem.service.LocationService {
+      }
+    }
+  }
+  
+
+  namespace com.c1se22.publiclaundsmartsystem {
+    namespace service {
+      interface com.c1se22.publiclaundsmartsystem.service.MachineService {
+      }
+    }
+  }
+  
+
+  namespace com.c1se22.publiclaundsmartsystem {
+    namespace service {
+      interface com.c1se22.publiclaundsmartsystem.service.NotificationService {
+      }
+    }
+  }
+  
+
+  namespace com.c1se22.publiclaundsmartsystem {
+    namespace service {
+      interface com.c1se22.publiclaundsmartsystem.service.OTPService {
+      }
+    }
+  }
+  
+
+  namespace com.c1se22.publiclaundsmartsystem {
+    namespace service {
+      interface com.c1se22.publiclaundsmartsystem.service.OwnerService {
+      }
+    }
+  }
+  
+
+  namespace com.c1se22.publiclaundsmartsystem {
+    namespace service {
+      interface com.c1se22.publiclaundsmartsystem.service.PaymentProcessingService {
+      }
+    }
+  }
+  
+
+  namespace com.c1se22.publiclaundsmartsystem {
+    namespace service {
+      interface com.c1se22.publiclaundsmartsystem.service.PushNotificationService {
+      }
+    }
+  }
+  
+
+  namespace com.c1se22.publiclaundsmartsystem {
+    namespace service {
+      interface com.c1se22.publiclaundsmartsystem.service.ReservationService {
+      }
+    }
+  }
+  
+
+  namespace com.c1se22.publiclaundsmartsystem {
+    namespace service {
+      interface com.c1se22.publiclaundsmartsystem.service.TransactionService {
+      }
+    }
+  }
+  
+
+  namespace com.c1se22.publiclaundsmartsystem {
+    namespace service {
+      interface com.c1se22.publiclaundsmartsystem.service.UsageHistoryService {
+      }
+    }
+  }
+  
+
+  namespace com.c1se22.publiclaundsmartsystem {
+    namespace service {
+      interface com.c1se22.publiclaundsmartsystem.service.UserBanService {
+      }
+    }
+  }
+  
+
+  namespace com.c1se22.publiclaundsmartsystem {
+    namespace service {
+      interface com.c1se22.publiclaundsmartsystem.service.UserDeviceService {
+      }
+    }
+  }
+  
+
+  namespace com.c1se22.publiclaundsmartsystem {
+    namespace service {
+      interface com.c1se22.publiclaundsmartsystem.service.UserService {
+      }
+    }
+  }
+  
+
+  namespace com.c1se22.publiclaundsmartsystem {
+    namespace service {
+      interface com.c1se22.publiclaundsmartsystem.service.WashingTypeService {
+      }
+    }
+  }
+  
+
+  namespace com.c1se22.publiclaundsmartsystem {
+    namespace service {
+      namespace impl {
+        class com.c1se22.publiclaundsmartsystem.service.impl.AuthServiceImpl {
+        }
+      }
+    }
+  }
+  
+
+  namespace com.c1se22.publiclaundsmartsystem {
+    namespace service {
+      namespace impl {
+        class com.c1se22.publiclaundsmartsystem.service.impl.EventServiceImpl {
+        }
+      }
+    }
+  }
+  
+
+  namespace com.c1se22.publiclaundsmartsystem {
+    namespace service {
+      namespace impl {
+        class com.c1se22.publiclaundsmartsystem.service.impl.FCMServiceImpl {
+        }
+      }
+    }
+  }
+  
+
+  namespace com.c1se22.publiclaundsmartsystem {
+    namespace service {
+      namespace impl {
+        class com.c1se22.publiclaundsmartsystem.service.impl.LocationServiceImpl {
+        }
+      }
+    }
+  }
+  
+
+  namespace com.c1se22.publiclaundsmartsystem {
+    namespace service {
+      namespace impl {
+        class com.c1se22.publiclaundsmartsystem.service.impl.MachineServiceImpl {
+        }
+      }
+    }
+  }
+  
+
+  namespace com.c1se22.publiclaundsmartsystem {
+    namespace service {
+      namespace impl {
+        class com.c1se22.publiclaundsmartsystem.service.impl.NotificationServiceImpl {
+        }
+      }
+    }
+  }
+  
+
+  namespace com.c1se22.publiclaundsmartsystem {
+    namespace service {
+      namespace impl {
+        class com.c1se22.publiclaundsmartsystem.service.impl.OTPServiceImpl {
+        }
+      }
+    }
+  }
+  
+
+  namespace com.c1se22.publiclaundsmartsystem {
+    namespace service {
+      namespace impl {
+        class com.c1se22.publiclaundsmartsystem.service.impl.OwnerServiceImpl {
+        }
+      }
+    }
+  }
+  
+
+  namespace com.c1se22.publiclaundsmartsystem {
+    namespace service {
+      namespace impl {
+        class com.c1se22.publiclaundsmartsystem.service.impl.PaymentProcessingServiceImpl {
+        }
+      }
+    }
+  }
+  
+
+  namespace com.c1se22.publiclaundsmartsystem {
+    namespace service {
+      namespace impl {
+        class com.c1se22.publiclaundsmartsystem.service.impl.PushNotificationServiceImpl {
+        }
+      }
+    }
+  }
+  
+
+  namespace com.c1se22.publiclaundsmartsystem {
+    namespace service {
+      namespace impl {
+        class com.c1se22.publiclaundsmartsystem.service.impl.ReservationServiceImpl {
+        }
+      }
+    }
+  }
+  
+
+  namespace com.c1se22.publiclaundsmartsystem {
+    namespace service {
+      namespace impl {
+        class com.c1se22.publiclaundsmartsystem.service.impl.TransactionServiceImpl {
+        }
+      }
+    }
+  }
+  
+
+  namespace com.c1se22.publiclaundsmartsystem {
+    namespace service {
+      namespace impl {
+        class com.c1se22.publiclaundsmartsystem.service.impl.UsageHistoryServiceImpl {
+        }
+      }
+    }
+  }
+  
+
+  namespace com.c1se22.publiclaundsmartsystem {
+    namespace service {
+      namespace impl {
+        class com.c1se22.publiclaundsmartsystem.service.impl.UserBanServiceImpl {
+        }
+      }
+    }
+  }
+  
+
+  namespace com.c1se22.publiclaundsmartsystem {
+    namespace service {
+      namespace impl {
+        class com.c1se22.publiclaundsmartsystem.service.impl.UserDeviceServiceImpl {
+        }
+      }
+    }
+  }
+  
+
+  namespace com.c1se22.publiclaundsmartsystem {
+    namespace service {
+      namespace impl {
+        class com.c1se22.publiclaundsmartsystem.service.impl.UserServiceImpl {
+        }
+      }
+    }
+  }
+  
+
+  namespace com.c1se22.publiclaundsmartsystem {
+    namespace service {
+      namespace impl {
+        class com.c1se22.publiclaundsmartsystem.service.impl.WashingTypeServiceImpl {
+        }
+      }
+    }
+  }
+  
+
+  namespace com.c1se22.publiclaundsmartsystem {
+    namespace util {
+      class com.c1se22.publiclaundsmartsystem.util.AppConstants {
+      }
+    }
+  }
+  
+
+  com.c1se22.publiclaundsmartsystem.annotation.EmailConstraintsValidator .up.|> jakarta.validation.ConstraintValidator
+  com.c1se22.publiclaundsmartsystem.annotation.PasswordConstraintsValidator .up.|> jakarta.validation.ConstraintValidator
+  com.c1se22.publiclaundsmartsystem.configuration.SecurityConfig o-- com.c1se22.publiclaundsmartsystem.security.JwtAuthenticationEntryPoint : jwtAuthenticationEntryPoint
+  com.c1se22.publiclaundsmartsystem.configuration.SecurityConfig o-- com.c1se22.publiclaundsmartsystem.security.JwtAuthenticationFilter : jwtAuthenticationFilter
+  com.c1se22.publiclaundsmartsystem.configuration.WebConfig .up.|> org.springframework.web.servlet.config.annotation.WebMvcConfigurer
+  com.c1se22.publiclaundsmartsystem.controller.AuthController o-- com.c1se22.publiclaundsmartsystem.service.AuthService : authService
+  com.c1se22.publiclaundsmartsystem.controller.LocationController o-- com.c1se22.publiclaundsmartsystem.service.LocationService : locationService
+  com.c1se22.publiclaundsmartsystem.controller.MachineController o-- com.c1se22.publiclaundsmartsystem.service.MachineService : machineService
+  com.c1se22.publiclaundsmartsystem.controller.NotificationController o-- com.c1se22.publiclaundsmartsystem.service.NotificationService : notificationService
+  com.c1se22.publiclaundsmartsystem.controller.OwnerController o-- com.c1se22.publiclaundsmartsystem.service.OwnerService : ownerService
+  com.c1se22.publiclaundsmartsystem.controller.PasswordResetController o-- com.c1se22.publiclaundsmartsystem.service.OTPService : otpService
+  com.c1se22.publiclaundsmartsystem.controller.PaymentController o-- com.c1se22.publiclaundsmartsystem.service.PaymentProcessingService : paymentProcessingService
+  com.c1se22.publiclaundsmartsystem.controller.ReservationController o-- com.c1se22.publiclaundsmartsystem.service.ReservationService : reservationService
+  com.c1se22.publiclaundsmartsystem.controller.TransactionController o-- com.c1se22.publiclaundsmartsystem.service.TransactionService : transactionService
+  com.c1se22.publiclaundsmartsystem.controller.UsageHistoryController o-- com.c1se22.publiclaundsmartsystem.service.UsageHistoryService : usageHistoryService
+  com.c1se22.publiclaundsmartsystem.controller.UserController o-- com.c1se22.publiclaundsmartsystem.service.UserService : userService
+  com.c1se22.publiclaundsmartsystem.controller.UserDeviceController o-- com.c1se22.publiclaundsmartsystem.service.UserDeviceService : userDeviceService
+  com.c1se22.publiclaundsmartsystem.controller.WashingTypeController o-- com.c1se22.publiclaundsmartsystem.service.WashingTypeService : washingTypeService
+  com.c1se22.publiclaundsmartsystem.entity.Feedback o-- com.c1se22.publiclaundsmartsystem.entity.Machine : machine
+  com.c1se22.publiclaundsmartsystem.entity.Feedback o-- com.c1se22.publiclaundsmartsystem.entity.User : user
+  com.c1se22.publiclaundsmartsystem.entity.Machine o-- com.c1se22.publiclaundsmartsystem.entity.Location : location
+  com.c1se22.publiclaundsmartsystem.entity.Machine o-- com.c1se22.publiclaundsmartsystem.enums.MachineStatus : status
+  com.c1se22.publiclaundsmartsystem.entity.Machine o-- com.c1se22.publiclaundsmartsystem.entity.User : user
+  com.c1se22.publiclaundsmartsystem.entity.MaintenanceLog o-- com.c1se22.publiclaundsmartsystem.entity.Machine : machine
+  com.c1se22.publiclaundsmartsystem.entity.Notification o-- com.c1se22.publiclaundsmartsystem.entity.User : user
+  com.c1se22.publiclaundsmartsystem.entity.OwnerWithdrawInfo o-- com.c1se22.publiclaundsmartsystem.entity.User : owner
+  com.c1se22.publiclaundsmartsystem.entity.PasswordResetToken o-- com.c1se22.publiclaundsmartsystem.entity.User : user
+  com.c1se22.publiclaundsmartsystem.entity.Reservation o-- com.c1se22.publiclaundsmartsystem.entity.Machine : machine
+  com.c1se22.publiclaundsmartsystem.entity.Reservation o-- com.c1se22.publiclaundsmartsystem.enums.ReservationStatus : status
+  com.c1se22.publiclaundsmartsystem.entity.Reservation o-- com.c1se22.publiclaundsmartsystem.entity.User : user
+  com.c1se22.publiclaundsmartsystem.entity.Reservation o-- com.c1se22.publiclaundsmartsystem.entity.WashingType : washingType
+  com.c1se22.publiclaundsmartsystem.entity.Transaction o-- com.c1se22.publiclaundsmartsystem.enums.TransactionStatus : status
+  com.c1se22.publiclaundsmartsystem.entity.Transaction o-- com.c1se22.publiclaundsmartsystem.enums.TransactionType : type
+  com.c1se22.publiclaundsmartsystem.entity.Transaction o-- com.c1se22.publiclaundsmartsystem.entity.User : user
+  com.c1se22.publiclaundsmartsystem.entity.UsageHistory o-- com.c1se22.publiclaundsmartsystem.entity.Machine : machine
+  com.c1se22.publiclaundsmartsystem.entity.UsageHistory o-- com.c1se22.publiclaundsmartsystem.enums.UsageHistoryStatus : status
+  com.c1se22.publiclaundsmartsystem.entity.UsageHistory o-- com.c1se22.publiclaundsmartsystem.entity.User : user
+  com.c1se22.publiclaundsmartsystem.entity.UsageHistory o-- com.c1se22.publiclaundsmartsystem.entity.WashingType : washingType
+  com.c1se22.publiclaundsmartsystem.entity.UserBanHistory o-- com.c1se22.publiclaundsmartsystem.entity.User : user
+  com.c1se22.publiclaundsmartsystem.entity.UserDevice o-- com.c1se22.publiclaundsmartsystem.enums.DeviceType : deviceType
+  com.c1se22.publiclaundsmartsystem.entity.UserDevice o-- com.c1se22.publiclaundsmartsystem.entity.User : user
+  com.c1se22.publiclaundsmartsystem.event.ReservationCreatedEvent .up.|> com.c1se22.publiclaundsmartsystem.event.AppEvent
+  com.c1se22.publiclaundsmartsystem.event.ReservationCreatedEvent o-- com.c1se22.publiclaundsmartsystem.entity.Reservation : reservation
+  com.c1se22.publiclaundsmartsystem.event.WashingCompleteEvent .up.|> com.c1se22.publiclaundsmartsystem.event.AppEvent
+  com.c1se22.publiclaundsmartsystem.event.WashingCompleteEvent o-- com.c1se22.publiclaundsmartsystem.entity.UsageHistory : usageHistory
+  com.c1se22.publiclaundsmartsystem.event.WashingNearCompleteEvent .up.|> com.c1se22.publiclaundsmartsystem.event.AppEvent
+  com.c1se22.publiclaundsmartsystem.event.WashingNearCompleteEvent o-- com.c1se22.publiclaundsmartsystem.entity.UsageHistory : usageHistory
+  com.c1se22.publiclaundsmartsystem.event.handler.ReservationEventHandler o-- com.c1se22.publiclaundsmartsystem.service.NotificationService : notificationService
+  com.c1se22.publiclaundsmartsystem.event.handler.ReservationEventHandler o-- com.c1se22.publiclaundsmartsystem.repository.ReservationRepository : reservationRepository
+  com.c1se22.publiclaundsmartsystem.event.handler.ReservationEventHandler o-- com.c1se22.publiclaundsmartsystem.service.ReservationService : reservationService
+  com.c1se22.publiclaundsmartsystem.event.handler.WashingCompleteEventHandler o-- com.c1se22.publiclaundsmartsystem.service.NotificationService : notificationService
+  com.c1se22.publiclaundsmartsystem.event.handler.WashingCompleteEventHandler o-- com.c1se22.publiclaundsmartsystem.service.UsageHistoryService : usageHistoryService
+  com.c1se22.publiclaundsmartsystem.event.handler.WashingNearCompleteEventHandler o-- com.c1se22.publiclaundsmartsystem.service.EventService : eventService
+  com.c1se22.publiclaundsmartsystem.event.handler.WashingNearCompleteEventHandler o-- com.c1se22.publiclaundsmartsystem.service.NotificationService : notificationService
+  com.c1se22.publiclaundsmartsystem.exception.APIException -up-|> com.c1se22.publiclaundsmartsystem.exception.BusinessException
+  com.c1se22.publiclaundsmartsystem.exception.BusinessException o-- com.c1se22.publiclaundsmartsystem.enums.ErrorCode : errorCode
+  com.c1se22.publiclaundsmartsystem.exception.GlobalExceptionHandler -up-|> org.springframework.web.servlet.mvc.method.annotation.ResponseEntityExceptionHandler
+  com.c1se22.publiclaundsmartsystem.exception.InsufficientBalanceException -up-|> com.c1se22.publiclaundsmartsystem.exception.BusinessException
+  com.c1se22.publiclaundsmartsystem.exception.PaymentProcessingException -up-|> com.c1se22.publiclaundsmartsystem.exception.BusinessException
+  com.c1se22.publiclaundsmartsystem.exception.ResourceNotFoundException -up-|> com.c1se22.publiclaundsmartsystem.exception.BusinessException
+  com.c1se22.publiclaundsmartsystem.payload.request.UserDeviceRegisterDto o-- com.c1se22.publiclaundsmartsystem.enums.DeviceType : deviceType
+  com.c1se22.publiclaundsmartsystem.payload.response.ReservationResponseDto o-- com.c1se22.publiclaundsmartsystem.entity.WashingType : washingType
+  com.c1se22.publiclaundsmartsystem.payload.response.TransactionDto o-- com.c1se22.publiclaundsmartsystem.enums.TransactionStatus : status
+  com.c1se22.publiclaundsmartsystem.payload.response.TransactionDto o-- com.c1se22.publiclaundsmartsystem.enums.TransactionType : type
+  com.c1se22.publiclaundsmartsystem.security.CustomeUserDetailsService .up.|> org.springframework.security.core.userdetails.UserDetailsService
+  com.c1se22.publiclaundsmartsystem.security.CustomeUserDetailsService o-- com.c1se22.publiclaundsmartsystem.service.UserBanService : userBanService
+  com.c1se22.publiclaundsmartsystem.security.CustomeUserDetailsService o-- com.c1se22.publiclaundsmartsystem.repository.UserRepository : userRepository
+  com.c1se22.publiclaundsmartsystem.security.JwtAuthenticationEntryPoint .up.|> org.springframework.security.web.AuthenticationEntryPoint
+  com.c1se22.publiclaundsmartsystem.security.JwtAuthenticationFilter -up-|> org.springframework.web.filter.OncePerRequestFilter
+  com.c1se22.publiclaundsmartsystem.security.JwtAuthenticationFilter o-- com.c1se22.publiclaundsmartsystem.security.JwtProvider : jwtProvider
+  com.c1se22.publiclaundsmartsystem.service.impl.AuthServiceImpl .up.|> com.c1se22.publiclaundsmartsystem.service.AuthService
+  com.c1se22.publiclaundsmartsystem.service.impl.AuthServiceImpl o-- com.c1se22.publiclaundsmartsystem.security.JwtProvider : jwtProvider
+  com.c1se22.publiclaundsmartsystem.service.impl.AuthServiceImpl o-- com.c1se22.publiclaundsmartsystem.repository.RoleRepository : roleRepository
+  com.c1se22.publiclaundsmartsystem.service.impl.AuthServiceImpl o-- com.c1se22.publiclaundsmartsystem.repository.UserBanHistoryRepository : userBanHistoryRepository
+  com.c1se22.publiclaundsmartsystem.service.impl.AuthServiceImpl o-- com.c1se22.publiclaundsmartsystem.service.UserBanService : userBanService
+  com.c1se22.publiclaundsmartsystem.service.impl.AuthServiceImpl o-- com.c1se22.publiclaundsmartsystem.repository.UserRepository : userRepository
+  com.c1se22.publiclaundsmartsystem.service.impl.EventServiceImpl .up.|> com.c1se22.publiclaundsmartsystem.service.EventService
+  com.c1se22.publiclaundsmartsystem.service.impl.FCMServiceImpl .up.|> com.c1se22.publiclaundsmartsystem.service.FCMService
+  com.c1se22.publiclaundsmartsystem.service.impl.FCMServiceImpl o-- com.c1se22.publiclaundsmartsystem.service.UserDeviceService : userDeviceService
+  com.c1se22.publiclaundsmartsystem.service.impl.LocationServiceImpl .up.|> com.c1se22.publiclaundsmartsystem.service.LocationService
+  com.c1se22.publiclaundsmartsystem.service.impl.LocationServiceImpl o-- com.c1se22.publiclaundsmartsystem.repository.LocationRepository : locationRepository
+  com.c1se22.publiclaundsmartsystem.service.impl.LocationServiceImpl o-- com.c1se22.publiclaundsmartsystem.repository.MachineRepository : machineRepository
+  com.c1se22.publiclaundsmartsystem.service.impl.MachineServiceImpl .up.|> com.c1se22.publiclaundsmartsystem.service.MachineService
+  com.c1se22.publiclaundsmartsystem.service.impl.MachineServiceImpl o-- com.c1se22.publiclaundsmartsystem.repository.LocationRepository : locationRepository
+  com.c1se22.publiclaundsmartsystem.service.impl.MachineServiceImpl o-- com.c1se22.publiclaundsmartsystem.repository.MachineRepository : machineRepository
+  com.c1se22.publiclaundsmartsystem.service.impl.MachineServiceImpl o-- com.c1se22.publiclaundsmartsystem.service.OwnerService : ownerService
+  com.c1se22.publiclaundsmartsystem.service.impl.MachineServiceImpl o-- com.c1se22.publiclaundsmartsystem.repository.RoleRepository : roleRepository
+  com.c1se22.publiclaundsmartsystem.service.impl.MachineServiceImpl o-- com.c1se22.publiclaundsmartsystem.repository.UsageHistoryRepository : usageHistoryRepository
+  com.c1se22.publiclaundsmartsystem.service.impl.MachineServiceImpl o-- com.c1se22.publiclaundsmartsystem.repository.UserRepository : userRepository
+  com.c1se22.publiclaundsmartsystem.service.impl.NotificationServiceImpl .up.|> com.c1se22.publiclaundsmartsystem.service.NotificationService
+  com.c1se22.publiclaundsmartsystem.service.impl.NotificationServiceImpl o-- com.c1se22.publiclaundsmartsystem.repository.NotificationRepository : notificationRepository
+  com.c1se22.publiclaundsmartsystem.service.impl.NotificationServiceImpl o-- com.c1se22.publiclaundsmartsystem.service.PushNotificationService : pushNotificationService
+  com.c1se22.publiclaundsmartsystem.service.impl.NotificationServiceImpl o-- com.c1se22.publiclaundsmartsystem.service.UserDeviceService : userDeviceService
+  com.c1se22.publiclaundsmartsystem.service.impl.NotificationServiceImpl o-- com.c1se22.publiclaundsmartsystem.repository.UserRepository : userRepository
+  com.c1se22.publiclaundsmartsystem.service.impl.OTPServiceImpl .up.|> com.c1se22.publiclaundsmartsystem.service.OTPService
+  com.c1se22.publiclaundsmartsystem.service.impl.OTPServiceImpl o-- com.c1se22.publiclaundsmartsystem.repository.OTPRepository : otpRepository
+  com.c1se22.publiclaundsmartsystem.service.impl.OTPServiceImpl o-- com.c1se22.publiclaundsmartsystem.repository.PasswordResetTokenRepository : passwordResetTokenRepository
+  com.c1se22.publiclaundsmartsystem.service.impl.OTPServiceImpl o-- com.c1se22.publiclaundsmartsystem.repository.UserRepository : userRepository
+  com.c1se22.publiclaundsmartsystem.service.impl.OwnerServiceImpl .up.|> com.c1se22.publiclaundsmartsystem.service.OwnerService
+  com.c1se22.publiclaundsmartsystem.service.impl.OwnerServiceImpl o-- com.c1se22.publiclaundsmartsystem.repository.MachineRepository : machineRepository
+  com.c1se22.publiclaundsmartsystem.service.impl.OwnerServiceImpl o-- com.c1se22.publiclaundsmartsystem.repository.OwnerWithdrawInfoRepository : ownerWithdrawInfoRepository
+  com.c1se22.publiclaundsmartsystem.service.impl.OwnerServiceImpl o-- com.c1se22.publiclaundsmartsystem.repository.RoleRepository : roleRepository
+  com.c1se22.publiclaundsmartsystem.service.impl.OwnerServiceImpl o-- com.c1se22.publiclaundsmartsystem.repository.TransactionRepository : transactionRepository
+  com.c1se22.publiclaundsmartsystem.service.impl.OwnerServiceImpl o-- com.c1se22.publiclaundsmartsystem.repository.UsageHistoryRepository : usageHistoryRepository
+  com.c1se22.publiclaundsmartsystem.service.impl.OwnerServiceImpl o-- com.c1se22.publiclaundsmartsystem.repository.UserRepository : userRepository
+  com.c1se22.publiclaundsmartsystem.service.impl.PaymentProcessingServiceImpl .up.|> com.c1se22.publiclaundsmartsystem.service.PaymentProcessingService
+  com.c1se22.publiclaundsmartsystem.service.impl.PaymentProcessingServiceImpl o-- com.c1se22.publiclaundsmartsystem.service.NotificationService : notificationService
+  com.c1se22.publiclaundsmartsystem.service.impl.PaymentProcessingServiceImpl o-- com.c1se22.publiclaundsmartsystem.repository.TransactionRepository : transactionRepository
+  com.c1se22.publiclaundsmartsystem.service.impl.PaymentProcessingServiceImpl o-- com.c1se22.publiclaundsmartsystem.repository.UserRepository : userRepository
+  com.c1se22.publiclaundsmartsystem.service.impl.PushNotificationServiceImpl .up.|> com.c1se22.publiclaundsmartsystem.service.PushNotificationService
+  com.c1se22.publiclaundsmartsystem.service.impl.PushNotificationServiceImpl o-- com.c1se22.publiclaundsmartsystem.service.FCMService : fcmService
+  com.c1se22.publiclaundsmartsystem.service.impl.ReservationServiceImpl .up.|> com.c1se22.publiclaundsmartsystem.service.ReservationService
+  com.c1se22.publiclaundsmartsystem.service.impl.ReservationServiceImpl o-- com.c1se22.publiclaundsmartsystem.service.EventService : eventService
+  com.c1se22.publiclaundsmartsystem.service.impl.ReservationServiceImpl o-- com.c1se22.publiclaundsmartsystem.repository.MachineRepository : machineRepository
+  com.c1se22.publiclaundsmartsystem.service.impl.ReservationServiceImpl o-- com.c1se22.publiclaundsmartsystem.service.MachineService : machineService
+  com.c1se22.publiclaundsmartsystem.service.impl.ReservationServiceImpl o-- com.c1se22.publiclaundsmartsystem.repository.ReservationRepository : reservationRepository
+  com.c1se22.publiclaundsmartsystem.service.impl.ReservationServiceImpl o-- com.c1se22.publiclaundsmartsystem.service.UsageHistoryService : usageHistoryService
+  com.c1se22.publiclaundsmartsystem.service.impl.ReservationServiceImpl o-- com.c1se22.publiclaundsmartsystem.service.UserBanService : userBanService
+  com.c1se22.publiclaundsmartsystem.service.impl.ReservationServiceImpl o-- com.c1se22.publiclaundsmartsystem.repository.UserRepository : userRepository
+  com.c1se22.publiclaundsmartsystem.service.impl.ReservationServiceImpl o-- com.c1se22.publiclaundsmartsystem.repository.WashingTypeRepository : washingTypeRepository
+  com.c1se22.publiclaundsmartsystem.service.impl.TransactionServiceImpl .up.|> com.c1se22.publiclaundsmartsystem.service.TransactionService
+  com.c1se22.publiclaundsmartsystem.service.impl.TransactionServiceImpl o-- com.c1se22.publiclaundsmartsystem.repository.TransactionRepository : transactionRepository
+  com.c1se22.publiclaundsmartsystem.service.impl.UsageHistoryServiceImpl .up.|> com.c1se22.publiclaundsmartsystem.service.UsageHistoryService
+  com.c1se22.publiclaundsmartsystem.service.impl.UsageHistoryServiceImpl o-- com.c1se22.publiclaundsmartsystem.service.EventService : eventService
+  com.c1se22.publiclaundsmartsystem.service.impl.UsageHistoryServiceImpl o-- com.c1se22.publiclaundsmartsystem.repository.MachineRepository : machineRepository
+  com.c1se22.publiclaundsmartsystem.service.impl.UsageHistoryServiceImpl o-- com.c1se22.publiclaundsmartsystem.service.MachineService : machineService
+  com.c1se22.publiclaundsmartsystem.service.impl.UsageHistoryServiceImpl o-- com.c1se22.publiclaundsmartsystem.repository.UsageHistoryRepository : usageHistoryRepository
+  com.c1se22.publiclaundsmartsystem.service.impl.UsageHistoryServiceImpl o-- com.c1se22.publiclaundsmartsystem.repository.UserRepository : userRepository
+  com.c1se22.publiclaundsmartsystem.service.impl.UsageHistoryServiceImpl o-- com.c1se22.publiclaundsmartsystem.repository.WashingTypeRepository : washingTypeRepository
+  com.c1se22.publiclaundsmartsystem.service.impl.UserBanServiceImpl .up.|> com.c1se22.publiclaundsmartsystem.service.UserBanService
+  com.c1se22.publiclaundsmartsystem.service.impl.UserBanServiceImpl o-- com.c1se22.publiclaundsmartsystem.repository.UserBanHistoryRepository : userBanHistoryRepository
+  com.c1se22.publiclaundsmartsystem.service.impl.UserBanServiceImpl o-- com.c1se22.publiclaundsmartsystem.repository.UserRepository : userRepository
+  com.c1se22.publiclaundsmartsystem.service.impl.UserDeviceServiceImpl .up.|> com.c1se22.publiclaundsmartsystem.service.UserDeviceService
+  com.c1se22.publiclaundsmartsystem.service.impl.UserDeviceServiceImpl o-- com.c1se22.publiclaundsmartsystem.repository.UserDeviceRepository : userDeviceRepository
+  com.c1se22.publiclaundsmartsystem.service.impl.UserDeviceServiceImpl o-- com.c1se22.publiclaundsmartsystem.repository.UserRepository : userRepository
+  com.c1se22.publiclaundsmartsystem.service.impl.UserServiceImpl .up.|> com.c1se22.publiclaundsmartsystem.service.UserService
+  com.c1se22.publiclaundsmartsystem.service.impl.UserServiceImpl o-- com.c1se22.publiclaundsmartsystem.repository.UserRepository : userRepository
+  com.c1se22.publiclaundsmartsystem.service.impl.WashingTypeServiceImpl .up.|> com.c1se22.publiclaundsmartsystem.service.WashingTypeService
+  com.c1se22.publiclaundsmartsystem.service.impl.WashingTypeServiceImpl o-- com.c1se22.publiclaundsmartsystem.repository.WashingTypeRepository : washingTypeRepository
+
+
+right footer
+
+
+PlantUML diagram generated by SketchIt! (https://bitbucket.org/pmesmeur/sketch.it)
+For more information about this tool, please contact philippe.mesmeur@gmail.com
+endfooter
+
+@enduml

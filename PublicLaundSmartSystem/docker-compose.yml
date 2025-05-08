@@ -1,0 +1,45 @@
+services:
+  postgresdb:
+    image: postgres
+    container_name: postgresdb
+    hostname: postgresdb
+    restart: always
+    ports:
+      - 5432:5432
+    environment:
+      - TZ=Asia/Ho_Chi_Minh
+      - POSTGRES_PASSWORD=28122003
+      - POSTGRES_DB=laundry_system_db
+      - POSTGRES_HOST_AUTH_METHOD=scram-sha-256
+      - POSTGRES_INITDB_ARGS=--auth-host=scram-sha-256
+    volumes:
+      - /var/lib/postgresql/data:/var/lib/postgresql/data
+      - /etc/localtime:/etc/localtime:ro
+      - /etc/timezone:/etc/timezone:ro
+    networks:
+      shared_net:
+  laundry_system:
+    container_name: laundry_system
+    build:
+      context: ./
+      dockerfile: Dockerfile
+    depends_on:
+      - postgresdb
+    restart: on-failure
+    ports:
+      - 8080:8080
+    environment:
+      - TZ=Asia/Ho_Chi_Minh
+      - POSTGRESQL_HOST=postgresdb
+      - POSTGRESQL_PORT=5432
+      - POSTGRESQL_DB=laundry_system_db
+      - POSTGRESQL_USER=postgres
+      - POSTGRESQL_PASSWORD=28122003
+    volumes:
+      - "/etc/localtime:/etc/localtime:ro"
+      - "/etc/timezone:/etc/timezone:ro"
+      - "/opt/laundry_system/logs:/app/logs"
+    networks:
+      shared_net:
+networks:
+  shared_net:
